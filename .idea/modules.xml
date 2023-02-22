@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GDSE61_ITS1114_Ruvini_Rangathara.zip/GDSE61_ITS1114_Ruvini_Rangathara.zip.iml" filepath="$PROJECT_DIR$/GDSE61_ITS1114_Ruvini_Rangathara.zip/GDSE61_ITS1114_Ruvini_Rangathara.zip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Room Reservation System-project.iml" filepath="$PROJECT_DIR$/.idea/Room Reservation System-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roomReservationSystem/roomReservationSystem.iml" filepath="$PROJECT_DIR$/roomReservationSystem/roomReservationSystem.iml" />
+    </modules>
+  </component>
+</project>

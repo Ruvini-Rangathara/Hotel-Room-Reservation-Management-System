@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="bookRoomsContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookRoomsReceptionController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="266.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="184.0" layoutX="215.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-name.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="487.0" layoutY="50.0" opacity="0.39" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="27.0" layoutY="342.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow_back_FILL0.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="53.0" layoutY="340.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="321.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From :    ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To :   ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="405.0" layoutY="144.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <DatePicker layoutX="405.0" layoutY="179.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Text layoutX="319.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type  :    ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Button layoutX="398.0" layoutY="279.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #2980b9;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="484.0" layoutY="282.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search_FILL0.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="195.0" fitWidth="264.0" layoutX="27.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bedroom.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="roomType" layoutX="406.0" layoutY="214.0" prefHeight="25.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>

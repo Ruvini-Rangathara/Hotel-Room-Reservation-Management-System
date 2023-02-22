@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="customerDetailsContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerDetailsController">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="13.0" layoutY="363.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow_back_FILL0.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToReceptionOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #e74c3c;" text="Back To Reception" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="506.0" layoutY="360.0" mnemonicParsing="false" onAction="#nextOnAction" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #2980b9;" text="Next " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Details" wrappingWidth="112.703125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name            :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerName" layoutX="118.0" layoutY="37.0" prefHeight="25.0" prefWidth="231.0" />
+      <Text layoutX="16.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC                :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerNIC" layoutX="119.0" layoutY="65.0" prefHeight="25.0" prefWidth="231.0" />
+      <Text layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No   :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerContactNo" layoutX="119.0" layoutY="94.0" prefHeight="25.0" prefWidth="231.0" />
+      <Text layoutX="14.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email             :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerEmail" layoutX="119.0" layoutY="122.0" prefHeight="25.0" prefWidth="231.0" />
+      <TableView fx:id="customerTable" layoutX="17.0" layoutY="160.0" prefHeight="193.0" prefWidth="564.0">
+         <columns>
+            <TableColumn fx:id="columnCusNIC" prefWidth="127.0" text="NIC" />
+            <TableColumn fx:id="columnCusName" prefWidth="136.0" text="Name" />
+            <TableColumn fx:id="columnCusContactNo" prefWidth="129.0" text="Contact No" />
+            <TableColumn fx:id="columnCusEmail" prefWidth="159.0" text="Email" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="461.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="184.0" layoutX="410.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-name.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="377.0" layoutY="118.0" mnemonicParsing="false" onAction="#enterOnAction" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2980b9;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

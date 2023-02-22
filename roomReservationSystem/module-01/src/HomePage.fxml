@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="homePageContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageController">
+   <children>
+      <ImageView fitHeight="370.0" fitWidth="295.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@HomePage.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text fill="#2484e4" layoutX="362.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Blue Ocean" textAlignment="CENTER" wrappingWidth="184.369140625">
+         <font>
+            <Font name="Corbel Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="413.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="184.0" layoutX="362.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-name.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="415.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login As">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="400.0" layoutY="276.0" mnemonicParsing="false" onAction="#adminLoginOnAction" text="Administrator">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <toggleGroup>
+            <ToggleGroup fx:id="login" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="401.0" layoutY="299.0" mnemonicParsing="false" onAction="#receptionLoginOnAction" text="Receptionist" toggleGroup="$login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Text fill="#6b6565" layoutX="393.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.blueocean.com" />
+   </children>
+</AnchorPane>
