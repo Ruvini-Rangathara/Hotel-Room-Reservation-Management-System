@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminLoginController">
+   <children>
+      <AnchorPane fx:id="adminLoginContext" layoutY="1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#2484e4" layoutX="61.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Blue Ocean" textAlignment="CENTER" wrappingWidth="184.369140625">
+               <font>
+                  <Font name="Corbel Bold" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="412.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="184.0" layoutX="361.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-name.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="9.0" endY="-91.0" layoutX="291.0" layoutY="129.0" startX="9.0" startY="241.0" stroke="#aea2a2" />
+            <ImageView fitHeight="263.0" fitWidth="240.0" layoutX="29.0" layoutY="122.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@Login-page-bg.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#362727" layoutX="402.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrator">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="321.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="69.99999642372131">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="321.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="69.99999642372131">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="adminUsername" focusTraversable="false" layoutX="321.0" layoutY="209.0" prefHeight="25.0" prefWidth="211.0" promptText="blueocean@gmail.com">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <Text fill="#0c9dc9" layoutX="382.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Button focusTraversable="false" layoutX="320.0" layoutY="326.0" mnemonicParsing="false" onAction="#AdminLoginOnAction" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #2980b9;" text="Login" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="542.0" layoutY="209.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@account_circle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="542.0" layoutY="264.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock_FILL0.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="adminPassword" focusTraversable="false" layoutX="321.0" layoutY="264.0" prefHeight="25.0" prefWidth="211.0" promptText="***********">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

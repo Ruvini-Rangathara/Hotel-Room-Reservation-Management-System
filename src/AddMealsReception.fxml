@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="addMealsContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddMealsReceptionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="102.0" layoutX="75.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="395.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="184.0" layoutX="342.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-name.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="497.0" layoutY="38.0" opacity="0.39" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="24.0" layoutY="354.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow_back_FILL0.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="50.0" layoutY="352.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="448.0" layoutY="346.0" mnemonicParsing="false" onAction="#nextOnAction" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #2980b9;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="388.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Meals" wrappingWidth="74.00000095367432">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="279.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of People  :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="382.0" layoutY="174.0" prefHeight="25.0" prefWidth="150.0" />
+      <Text layoutX="279.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Plans      :  ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="549.0" layoutY="351.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@chevron_right_FILL0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="226.0" prefHeight="17.0" prefWidth="61.0" text="BreakFast" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="251.0" text="Price : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="breakfastPrice" layoutX="133.0" layoutY="249.0" prefHeight="17.0" prefWidth="61.0" />
+      <Button layoutX="99.0" layoutY="282.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="74.0" style="-fx-background-color: #2ecc71;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="102.0" layoutX="217.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+      <Label layoutX="262.0" layoutY="226.0" prefHeight="17.0" prefWidth="61.0" text="Lunch" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="251.0" text="Price : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lunchPrice" layoutX="275.0" layoutY="249.0" prefHeight="17.0" prefWidth="61.0" />
+      <Button layoutX="241.0" layoutY="282.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="74.0" style="-fx-background-color: #2ecc71;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="102.0" layoutX="360.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+      <Label layoutX="404.0" layoutY="226.0" prefHeight="17.0" prefWidth="61.0" text="Dinner" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="251.0" text="Price : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dinnerPrice" layoutX="418.0" layoutY="249.0" prefHeight="17.0" prefWidth="61.0" />
+      <Button layoutX="384.0" layoutY="282.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="74.0" style="-fx-background-color: #2ecc71;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="502.0" layoutY="291.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: #95a5a6;" text="None" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="178.0" fitWidth="244.0" layoutX="19.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MealImage.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="mealPlansChoiceBox" layoutX="382.0" layoutY="139.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="551.0" layoutY="172.0" mnemonicParsing="false" onAction="#oknOAction" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #2980b9;" text="Ok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
